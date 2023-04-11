@@ -57,7 +57,10 @@
 			var username = document.getElementById("username").value;
 			var password = document.getElementById("password").value;
 			if (username === "nintu" && password === "1234") {
-				 alert("success user authenticated")
+				setTimeout(() => {
+					alert("success user authenticated")
+				}, 5000);
+				 
 			} else {
 				alert("Invalid username or password");
 			}
